@@ -9,8 +9,8 @@ function aes128_cbc_decrypt($key, $data, $iv) {
   return mcrypt_decrypt(MCRYPT_RIJNDAEL_128, $key, $data, MCRYPT_MODE_CBC, $iv);
 }
 
-class Broadlink{
-	protected $name; 
+class Broadlink {
+    protected $name; 
     protected $host;
     protected $port = 80;
     protected $mac;
